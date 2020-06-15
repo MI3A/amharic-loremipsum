@@ -34,7 +34,7 @@ class Main extends Component {
     var sentences = ''
     for (let i = 0; i < len; i++) {
       var wordLen = 3 + Math.random() * 10
-      sentences += this.generateWord(wordLen) + '። &nbsp;&nbsp;&nbsp;'
+      sentences += this.generateWord(wordLen) + '። &nbsp;'
     }
     return sentences
   }
@@ -55,7 +55,7 @@ class Main extends Component {
       for (let j = 0; j < len2; j++) {
         word += this.letters.substr(Math.random() * this.letterLen, 1)
       }
-      temp += '&nbsp;' + word
+      temp +=  ' '+word
     }
     return temp
   }
