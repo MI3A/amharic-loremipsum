@@ -42,7 +42,7 @@ class Main extends Component {
     var paragraphs = ''
     for (let i = 0; i < len; i++) {
       var wordLen = 3 + Math.random() * 10
-      paragraphs += '<p>' + this.generateSentence(wordLen) + '</p>'
+      paragraphs += '<p class="text-left">' + this.generateSentence(wordLen) + '</p>'
     }
     return paragraphs
   }
